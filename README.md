@@ -1,3 +1,4 @@
 # Epistemic
 public void toggle_notifications() {       int current_hour, notify_per_day;       Date now = new Date();       int notify_times[] = null;       notify_per_day = radioButtonNotify.getindex();       SimpleDateFormat dateFormatter = new SimpleDateFormat("h");       current_hour = Integer.valueOf(dateFormatter.format(now).toString());       if(not_per_day > 0){           int div = 24/(1+notify_per_day);           for (int i;  i < notify_per_day; i++){               current_hour += div;               if (current_hour >= 24){                   current_hour =- 24;               }               notify_times[i] = current_hour;           }       }else{           if (notify_times != null){               Arrays.fill(notify_times,null);           }       }       Register_cellphone_memory(notify_times);     } 
-    int div = 24/(1+notify_per_day); 
+    int div = 24/(1+notify_per_day); // esse pega 24 horas e divide uma notificação por dia
+    
