@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Sistemic</string>
+    <string name="var_password">Password</string>
+    <string name="var_login">Entrar</string>
+    <string name="var_msg_erro_user">Error: email</string>
+    <string name="var_erro_senha"> A senha deve ter pelo menos uma letra ,  e um caracter alfanumérico.</string>
+    <string name="var_senha_vazia">Error: Mínimo 6 caracteres, pelo menos 1 letra e 1 número:!!</string>
+    <string name="var_user_vazio">Error: Email é requirido!!</string>
+    <string name="var_erro_conectar">Error ao conectar!</string>
+    <string name="var_erro_conectar_tente_mais_tarde">Erro ao conectar tente mais tarde...</string>
+    <string name="var_description">Recentes</string>
+    <string name="var_title_getout">Você voltará para tela de Login</string>
+    <string name="var_msg_getout">Deseja Realmente Sair?</string>
+
+
+    <string name="title_activity_principal">Sistemic</string>
+    <string name="pref_text">preference_text</string>
+    <string name="pref_key">user_prefs</string>
+
+
+</resources>

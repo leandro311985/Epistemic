@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#dedede"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    tools:context=".ConfiguracaoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/bordas">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="05dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:theme="@style/SwitchCompatTheme"
+            android:text="Medicamentos" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="8dp"
+            android:theme="@style/SwitchCompatTheme"
+            android:layout_weight="1"
+            android:text="Exercicios" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bordas"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgIdioma"
+            android:theme="@style/SwitchCompatTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Idioma"
+                android:gravity="center"/>
+
+
+
+            <RadioButton
+                android:id="@+id/rbportugues"
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="Portugues" />
+
+            <RadioButton
+                android:id="@+id/rbUsa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="English (USA)" />
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="340dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificação"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:theme="@style/SwitchCompatTheme"
+            android:layout_height="150dp">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 Vezes por dia" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Vezes por dia" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 Vezes por dia" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="NENHUMA NOTIFICAÇÃO" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
